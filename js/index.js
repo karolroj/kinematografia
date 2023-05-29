@@ -39,10 +39,10 @@ function clearToken() {
 window.addEventListener('DOMContentLoaded', function () {
     const token = localStorage.getItem('token');
     const notAlowedURLs = [
-        '/index.html',
-        '/movies.html',
-        '/serials.html',
-        '/vod-platforms.html'
+        'index.html',
+        'movies.html',
+        'serials.html',
+        'vod-platforms.html'
     ];
 
     if (!token && !notAlowedURLs.includes(window.location.pathname)) {
