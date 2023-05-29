@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function () {
     if (!token && !notAlowedURLs.includes(window.location.pathname)) {
         // Brak tokenu i próba dostępu do chronionej strony
         // Przekieruj użytkownika na stronę logowania lub inny odpowiedni obszar
-        window.location.href = 'https://karolroj.github.io/kinematografia/index.html'; // Przykład przekierowania na stronę logowania
+        window.location.href = 'https://karolroj.github.io/kinematografia/login.html'; // Przykład przekierowania na stronę logowania
     }
 });
 
