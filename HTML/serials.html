@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinematografia - seriale</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Kinematografia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./movies.html" id="moviesLink">Filmy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./serials.html" id="serialsLink">Seriale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vod-platforms.html" id="vodPlatformsLink">Platformy VOD</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <a class="nav-link" href="./login.html" id="loginLink" onclick="clearToken()">Zaloguj</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="mt-5 card col-10 col-md-7 col-lg-3 shadow p-3 mb-5 bg-body rounded">
+                <img src="./img/serials/gra-o-tron.jpg" class="card-img-top pt-2 rounded-1 img-fluid"
+                    alt="Gra o tron" />
+                <div class="card-body">
+                    <h5 class="card-title">Gra o tron</h5>
+                    <p class="card-text">
+                        Adaptacja sagi George'a R.R. Martina. W królestwie Westeros walka o władzę, spiski oraz zbrodnie
+                        są na porządku dziennym.
+                    </p>
+                    <a href="https://www.filmweb.pl/serial/Gra+o+tron-2011-476848/reviews" target="_blank"
+                        class="btn btn-primary">Zobacz opinię</a>
+                </div>
+            </div>
+            <div class="mt-5 card col-10 col-md-7 col-lg-3 offset-lg-1 shadow p-3 mb-5 bg-body rounded">
+                <img src="./img/serials/dr-house.jpg" class="card-img-top pt-2 rounded-1 img-fluid"
+                    alt="Dr House" />
+                <div class="card-body">
+                    <h5 class="card-title">Dr House</h5>
+                    <p class="card-text">
+                        Grupa lekarzy na czele z charyzmatycznym, acz aspołecznym doktorem House'em diagnozuje nietypowe
+                        choroby, niejednokrotnie ratując życie pacjentom.
+                    </p>
+                    <a href="https://www.filmweb.pl/serial/Dr+House-2004-130177/reviews" target="_blank"
+                        class="btn btn-primary">Zobacz opinię</a>
+                </div>
+            </div>
+            <div class="mt-5 card col-10 col-md-7 col-lg-3 offset-lg-1 shadow p-3 mb-5 bg-body rounded">
+                <img src="./img/serials/breaking-bad.jpg" class="card-img-top pt-2 rounded-1 img-fluid"
+                    alt="Breaking Bad" />
+                <div class="card-body">
+                    <h5 class="card-title">Breaking Bad</h5>
+                    <p class="card-text">
+                        Gdy nauczyciel chemii dowiaduje się, że ma raka, postanawia rozpocząć produkcję metamfetaminy,
+                        by finansowo zabezpieczyć swoją rodzinę.
+                    </p>
+                    <a href="https://www.filmweb.pl/serial/Breaking+Bad-2008-430668/reviews" target="_blank"
+                        class="btn btn-primary">Zobacz opinię</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="mt-5 card col-10 col-md-7 col-lg-3  shadow p-3 mb-5 bg-body rounded">
+                <img src="./img/serials/stranger-things.jpg" class="card-img-top pt-2 rounded-1 img-fluid"
+                    alt="Stranger Things" />
+                <div class="card-body">
+                    <h5 class="card-title">Stranger Things</h5>
+                    <p class="card-text">
+                        Podczas powrotu do domu znika dwunastoletni Will Byers. Zaginięcie chłopca jest początkiem
+                        dziwnych i niebezpiecznych wydarzeń trapiących prowincjonalne miasteczko.
+                    </p>
+                    <a href="https://www.filmweb.pl/serial/Stranger+Things-2016-750359/reviews" target="_blank"
+                        class="btn btn-primary">Zobacz opinię</a>
+                </div>
+            </div>
+            <div class="mt-5 card col-10 col-md-7 col-lg-3 offset-lg-1 shadow p-3 mb-5 bg-body rounded">
+                <img src="./img/serials/friends.jpg" class="card-img-top pt-2 rounded-1 img-fluid" alt="Przyjaciele" />
+                <div class="card-body">
+                    <h5 class="card-title">Przyjaciele</h5>
+                    <p class="card-text">
+                        Losy szóstki przyjaciół, którzy mieszkają i pracują w Nowym Jorku.
+                    </p>
+                    <a href="https://www.filmweb.pl/serial/Przyjaciele-1994-33993/reviews" target="_blank"
+                        class="btn btn-primary">Zobacz opinię</a>
+                </div>
+            </div>
+            <div class="mt-5 card col-10 col-md-7 col-lg-3 offset-lg-1 shadow p-3 mb-5 bg-body rounded">
+                <img src="./img/serials/sherlock.jpg" class="card-img-top pt-2 rounded-1 img-fluid"
+                    alt="Sherlock" />
+                <div class="card-body">
+                    <h5 class="card-title">Sherlock</h5>
+                    <p class="card-text">
+                        John Watson jest lekarzem wojskowym, który niedawno wrócił z wojny. Gdy poznaje genialnego
+                        detektywa Sherlocka Holmesa, zaczyna pomagać mu w rozwiązywaniu zagadek kryminalnych.
+                    </p>
+                    <a href="https://www.filmweb.pl/serial/Sherlock-2010-528992/reviews" target="_blank"
+                        class="btn btn-primary">Zobacz opinię</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Strona główna</a></li>
+                <li class="nav-item"><a href="./movies.html" class="nav-link px-2 text-muted">Filmy</a></li>
+                <li class="nav-item"><a href="./serials.html" class="nav-link px-2 text-muted">Seriale</a></li>
+                <li class="nav-item"><a href="./vod-platforms.html" class="nav-link px-2 text-muted">Platformy</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 Karol Rojewski</p>
+        </footer>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

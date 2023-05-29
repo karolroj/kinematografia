@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinematografia</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Kinematografia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./movies.html" id="moviesLink">Filmy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./serials.html" id="serialsLink">Seriale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vod-platforms.html" id="vodPlatformsLink">Platformy VOD</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <a class="nav-link" href="./login.html" id="loginLink" onclick="clearToken()">Zaloguj</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-8">
+                <h1 class="fw-bold mb-4">Nadchodzące produkcje</h1>
+                <div id="banner-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/baners/the-flash.png" class="d-block w-100" height="400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/baners/indiana-jones.png" class="d-block w-100" height="400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/baners/oppenheimer.png" class="d-block w-100" height="400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/baners/the-little-mermaid.png" class="d-block w-100" height="400" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/baners/barbie.png" class="d-block w-100" height="400" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#banner-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Poprzedni</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#banner-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Następny</span>
+                    </button>
+                </div>
+                <div class="card shadow my-3">
+                    <div class="card-header fw-bold">
+                        <a target="_blank"
+                            href="https://www.filmweb.pl/news/%22The+Hedge+Knight%22%3A+Spin-off+%22Gry+o+tron%22+b%C4%99dzie+skromniejszy+ni%C5%BC+%22R%C3%B3d+smoka%22+%E2%80%93+Filmweb-150961">
+                            "The Hedge Knight": Spin-off "Gry o tron" będzie skromniejszy niż "Ród smoka"</a>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img/info/The-Hedge-Knight.jpg" alt="Callany-Julianne"
+                            class="img-fluid float-start me-3" width="1000vw">
+                        W oczekiwaniu na nowy sezon "Rodu smoka" – który aktualnie mierzy się z opóźnieniami
+                        spowodowanymi strajkiem scenarzystów – dostaliśmy kilka znaczących informacji na temat innego
+                        prequela "Gry o tron". Francesca Orci, szefowa HBO Drama, ogłosiła, że "A Knight of the Seven
+                        Kingdoms: The Hedge Knight" będzie znacznie skromniejszy pod względem rozmachu niż "Ród smoka".
+                        Wygląda też na to, że i sama opowieść o Ser Duncanie i jego giermku Aegonie Targaryenie nie
+                        będzie tak rozległa – serial został bowiem zaplanowany na tylko trzy sezony.
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card shadow my-3">
+                    <div class="card-header fw-bold">
+                        <a target="_blank"
+                            href="https://www.filmweb.pl/news/%22Amateur%22%3A+Holt+McCallany+i+Julianne+Nicholson+w+thrillerze+z+Ramim+Malekiem+%E2%80%93+Filmweb-150963">Thriller
+                            "Amateur". Rami Malek w obsadzie</a>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img/info/Callany-Julianne.jpg" alt="Callany-Julianne"
+                            class="img-fluid float-start me-3" width="1000vw">
+                        Holt McCallany – czyli serialowy Bill Tench z "Mindhuntera" – i Julianne Nicholson ("Mare z
+                        Easttown") dołączyli do obsady thrillera "Amateur" o kryptologu pracującym dla CIA. Gwiazdą
+                        filmu jest Rami Malek.
+                    </div>
+                </div>
+                <div class="card shadow my-3">
+                    <div class="card-header fw-bold">
+                        <a target="_blank"
+                            href="https://www.filmweb.pl/news/Wiemy%2C+ile+trwa+%22Mission%3A+Impossible+7%22.+To+najd%C5%82u%C5%BCsza+cz%C4%99%C5%9B%C4%87+cyklu-150941">
+                            "Mission: Impossible 7". To najdłuższa część cyklu
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <img src="./img/info/Mission-Impossible-7.jpg" alt="Mission-Impossible-7"
+                            class="img-fluid float-start me-3" width="1000vw">
+                        Czas trwania "Mission: Impossible – Dead Reckoning – Part One" był przedmiotem wielu spekulacji.
+                        W marcu Bob Bakish, prezes Paramount Global stwierdził, że film wymaga cięć. W ubiegłym tygodniu
+                        Twitter obiegła niepotwierdzona informacja, jakoby najnowsza odsłona przygód agenta Ethana Hunta
+                        miała trwać 2 godziny i 45 minut. Jak podaje portal IGN, produkcja będzie jednak krótsza – 2
+                        godziny i 27 minut.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Strona główna</a></li>
+                <li class="nav-item"><a href="./movies.html" class="nav-link px-2 text-muted">Filmy</a></li>
+                <li class="nav-item"><a href="./serials.html" class="nav-link px-2 text-muted">Seriale</a></li>
+                <li class="nav-item"><a href="./vod-platforms.html" class="nav-link px-2 text-muted">Platformy</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 Karol Rojewski</p>
+        </footer>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinematografia - platformy</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Kinematografia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./movies.html" id="moviesLink">Filmy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./serials.html" id="serialsLink">Seriale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vod-platforms.html" id="vodPlatformsLink">Platformy VOD</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <a class="nav-link" href="./login.html" id="loginLink" onclick="clearToken()">Zaloguj</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row my-4 shadow">
+            <div class="col-lg-3">
+                <img class="py-2" src="/img/logos/netflix.png" width="330px" height="169px" />
+            </div>
+            <div class="col-lg-8 ms-2 align-self-center ">
+                <blockquote class="blockquote mb-0">
+                    <p>Netflix, Inc. – serwis VOD oferujący za zryczałtowaną opłatą dostęp do filmów i seriali poprzez
+                        media strumieniowe. W Polsce wystartował jesienią 2016 roku. Obecnie usługa dostępna jest na
+                        całym świecie z kilkoma wyjątkami.</p>
+                    <footer class="blockquote-footer">Wikipedia, <a href="https://pl.wikipedia.org/wiki/Netflix"
+                            target="_blank" class="text-primary">Zobacz
+                            więcej</a></cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row my-4 shadow">
+            <div class="col-lg-3">
+                <img class="py-2" src="/img/logos/disney.jpg" width="330px" height="169px" />
+            </div>
+            <div class="col-lg-8 ms-2 align-self-center ">
+                <blockquote class="blockquote mb-0">
+                    <p>Disney+ – amerykańska usługa streamingu na życzenie. Podlega pod Direct-to-Consumer, jednostkę
+                        zależną The Walt Disney Company.</p>
+                    <footer class="blockquote-footer">Wikipedia, <a href="https://pl.wikipedia.org/wiki/Disney%2B"
+                            target="_blank" class="text-primary">Zobacz
+                            więcej</a></cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row my-4 shadow">
+            <div class="col-lg-3">
+                <img class="py-2" src="/img/logos/amazon-prime.png" width="330px" height="169px" />
+            </div>
+            <div class="col-lg-8 ms-2 align-self-center ">
+                <blockquote class="blockquote mb-0">
+                    <p>Prime Video – amerykańska platforma wideo na życzenie, oferująca dostęp do filmów i seriali
+                        poprzez media strumieniowe. Usługa została uruchomiona w 2006 roku. W Polsce platforma pojawiła
+                        się 14 grudnia 2016.</p>
+                    <footer class="blockquote-footer">Wikipedia, <a href="https://pl.wikipedia.org/wiki/Prime_Video"
+                            class="text-primary" target="_blank">Zobacz
+                            więcej</a></cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row my-4 shadow">
+            <div class="col-lg-3">
+                <img class="py-2" src="/img/logos/hbo-max.png" width="330px" height="169px" />
+            </div>
+            <div class="col-lg-8 ms-2 align-self-center ">
+                <blockquote class="blockquote mb-0">
+                    <p>HBO Max – amerykański serwis strumieniowy typu wideo na życzenie. Opiera się na subskrypcji
+                        over-the-top, oferując bezpośredni dostęp do swojej biblioteki za stałą miesięczną opłatą. Jest
+                        prowadzony przez koncern mediowy Warner Bros. Discovery.</p>
+                    <footer class="blockquote-footer">Wikipedia, <a href="https://pl.wikipedia.org/wiki/HBO_Max"
+                            class="text-primary" target="_blank">Zobacz
+                            więcej</a></cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Strona główna</a></li>
+                <li class="nav-item"><a href="./movies.html" class="nav-link px-2 text-muted">Filmy</a></li>
+                <li class="nav-item"><a href="./serials.html" class="nav-link px-2 text-muted">Seriale</a></li>
+                <li class="nav-item"><a href="./vod-platforms.html" class="nav-link px-2 text-muted">Platformy</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 Karol Rojewski</p>
+        </footer>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
