@@ -23,27 +23,36 @@ function loginToPage() {
         password: document.getElementById("password").value
     };
 
-    fetch('http://localhost:3000/login', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(loginData)
-    })
-        .then(response => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                throw new Error(response.status === 401 ? 'Nieprawidłowy login lub hasło' : 'Błąd serwera');
-            }
-        })
-        .then(data => {
-            localStorage.setItem('token', data.token);
-            window.location.href = "http://127.0.0.1:5500/index.html";
-        })
-        .catch(error => {
-            alert(error.message);
-        });
+    if(loginData.username === "admin" && loginData.password === "admin") {
+        localStorage.setItem('token', data.token);
+        window.location.href = "http://127.0.0.1:5500/index.html";
+        return;
+    }
+        
+    alert('Nieprawidłowy login lub hasło');
+    
+
+    // fetch('http://localhost:3000/login', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(loginData)
+    // })
+    //     .then(response => {
+    //         if (response.ok) {
+    //             return response.json();
+    //         } else {
+    //             throw new Error(response.status === 401 ? 'Nieprawidłowy login lub hasło' : 'Błąd serwera');
+    //         }
+    //     })
+    //     .then(data => {
+    //         localStorage.setItem('token', data.token);
+    //         window.location.href = "http://127.0.0.1:5500/index.html";
+    //     })
+    //     .catch(error => {
+    //         alert(error.message);
+    //     });
 }
 
 function clearToken() {
