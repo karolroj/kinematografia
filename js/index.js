@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', function () {
     //     'kinematografia/vod-platforms.html'
     // ];
 
-    if (token == null && this.window.location.href != 'https://karolroj.github.io/kinematografia/login.html') {
+    if (token == null && window.location.href != 'https://karolroj.github.io/kinematografia/login.html') {
         // Brak tokenu i próba dostępu do chronionej strony
         // Przekieruj użytkownika na stronę logowania lub inny odpowiedni obszar
         window.location.href = 'https://karolroj.github.io/kinematografia/login.html'; // Przykład przekierowania na stronę logowania
