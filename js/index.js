@@ -23,36 +23,13 @@ function loginToPage() {
         password: document.getElementById("password").value
     };
 
-    if(loginData.username === "admin" && loginData.password === "admin") {
-        localStorage.setItem('token', data.token);
+    if (loginData.username === "admin" && loginData.password === "admin") {
+        localStorage.setItem('token', generateToken());
         window.location.href = "http://127.0.0.1:5500/index.html";
         return;
     }
-        
-    alert('Nieprawidłowy login lub hasło');
-    
 
-    // fetch('http://localhost:3000/login', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(loginData)
-    // })
-    //     .then(response => {
-    //         if (response.ok) {
-    //             return response.json();
-    //         } else {
-    //             throw new Error(response.status === 401 ? 'Nieprawidłowy login lub hasło' : 'Błąd serwera');
-    //         }
-    //     })
-    //     .then(data => {
-    //         localStorage.setItem('token', data.token);
-    //         window.location.href = "http://127.0.0.1:5500/index.html";
-    //     })
-    //     .catch(error => {
-    //         alert(error.message);
-    //     });
+    alert('Nieprawidłowy login lub hasło');
 }
 
 function clearToken() {
@@ -69,3 +46,13 @@ window.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'login.html'; // Przykład przekierowania na stronę logowania
     }
 });
+
+function generateToken() {
+    var token = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < 32; i++)
+        token += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return token;
+}
