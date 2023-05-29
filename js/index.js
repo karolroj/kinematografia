@@ -38,14 +38,14 @@ function clearToken() {
 
 window.addEventListener('DOMContentLoaded', function () {
     const token = localStorage.getItem('token');
-    const allowedURLs = [
-        'https://karolroj.github.io/kinematografia/index.html',
-        'https://karolroj.github.io/kinematografia/movies.html',
-        'https://karolroj.github.io/kinematografia/serials.html',
-        'https://karolroj.github.io/kinematografia/vod-platforms.html'
+    const notAlowedURLs = [
+        '/index.html',
+        '/movies.html',
+        '/serials.html',
+        '/vod-platforms.html'
     ];
 
-    if (!token && this.window.location.href !== 'https://karolroj.github.io/kinematografia/login.html' && !allowedURLs.includes(this.window.location.href)) {
+    if (!token && !notAlowedURLs.includes(window.location.pathname)) {
         // Brak tokenu i próba dostępu do chronionej strony
         // Przekieruj użytkownika na stronę logowania lub inny odpowiedni obszar
         window.location.href = 'https://karolroj.github.io/kinematografia/index.html'; // Przykład przekierowania na stronę logowania
