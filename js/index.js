@@ -25,7 +25,7 @@ function loginToPage() {
 
     if (loginData.username === "admin" && loginData.password === "admin") {
         localStorage.setItem('token', generateToken());
-        window.location.href = "http://127.0.0.1:5500/index.html";
+        window.location.href = "https://karolroj.github.io/kinematografia/index.html";
         return;
     }
 
@@ -38,12 +38,17 @@ function clearToken() {
 
 window.addEventListener('DOMContentLoaded', function () {
     const token = localStorage.getItem('token');
-    const allowedURLs = ['/index.html', '/movies.html', '/serials.html', '/vod-platforms.html'];
+    const allowedURLs = [
+        'https://karolroj.github.io/kinematografia/index.html',
+        'https://karolroj.github.io/kinematografia/movies.html',
+        'https://karolroj.github.io/kinematografia/serials.html',
+        'https://karolroj.github.io/kinematografia/vod-platforms.html'
+    ];
 
     if (!token && allowedURLs.includes(window.location.pathname)) {
         // Brak tokenu i próba dostępu do chronionej strony
         // Przekieruj użytkownika na stronę logowania lub inny odpowiedni obszar
-        window.location.href = 'login.html'; // Przykład przekierowania na stronę logowania
+        window.location.href = 'https://karolroj.github.io/kinematografia/index.html'; // Przykład przekierowania na stronę logowania
     }
 });
 
